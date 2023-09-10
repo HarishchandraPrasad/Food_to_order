@@ -1,0 +1,46 @@
+<!-- <div class="row">
+    <div  *ngFor="let details of dish;let i=index;" class="col">
+        
+            {{dish[i]}}
+    </div>
+    
+</div> -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="column">
+            <table>
+                <thead>
+                    <th>Id</th><th>Restaurant Id</th><th>Dish Name</th><th>Dish Description</th><th>Dish Price</th><th>Veg</th><th>Add to Cart</th>
+                </thead>
+                <tbody  >
+                    <tr  *ngFor="let d of arrdish">
+                        
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut">{{d.id}}</td>
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut">{{d.res_Id}}</td>
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut"> {{d.d_Name}}</td>
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut">{{d.d_Description}}</td>
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut">{{d.d_Price}}</td>
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut">{{d.d_Veg}}</td>
+                            <td *ngIf="d.available=='no'" [appGreyDish]="shouldGreyOut">
+                                <button class="btn btn-primary mt-2" (click)="addToCart(d.id,d.res_Id)">Add to cart</button>
+                            </td>
+            
+                            <td *ngIf="d.available=='yes'" >{{d.id}}</td>
+                            <td *ngIf="d.available=='yes'" >{{d.res_Id}}</td>
+                            <td *ngIf="d.available=='yes'" > {{d.d_Name}}</td>
+                            <td *ngIf="d.available=='yes'" >{{d.d_Description}}</td>
+                            <td *ngIf="d.available=='yes'" >{{d.d_Price}}</td>
+                            <td *ngIf="d.available=='yes'" >{{d.d_Veg}}</td>
+                            <td *ngIf="d.available=='yes'" >
+                                <button class="btn btn-primary mt-2" (click)="addToCart(d.id,d.res_Id)">Add to cart</button>
+                            </td>
+                    </tr>
+                     
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+

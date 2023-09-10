@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <th>Id</th><th>Restaurant Id</th><th>Order Date</th><th>Dish id</th><th>No of Dishes</th><th>User id</th><th>Order Total</th><th>Payment Mode</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of order">
+            <td>{{o.id}}</td>
+            <td>{{o.restaurant_id}}</td>
+            <td>{{o.order_date}}</td>
+            <td>
+                {{o.dishes_id}}
+            </td>
+            <td>
+                {{o.num_of_dishes1}}
+            </td>
+            <td>{{o.user_id}}</td>
+            <td>{{o.order_total}}</td>
+            <td>{{o.payment_mode}}</td>
+        </tr>
+    </tbody>
+</table>

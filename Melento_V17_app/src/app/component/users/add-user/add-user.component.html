@@ -1,0 +1,175 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form" [class.error]="!myForm.valid && myForm.touched">
+    <div class="mb-3" [class.error]="!myForm.get('fName')?.valid && myForm.get('fName')?.touched">            
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="name" formControlName="fName" class="form-control" id="fname" >
+        <div *ngIf="!myForm.controls['fName'].valid" style="color: red;" class="form_error">
+                First name is Invalid
+        </div>
+        <div *ngIf="myForm.controls['fName'].hasError('required')" class="invalid-feedback">
+                First name is required
+        </div>
+      </div>
+      <div class="mb-3"
+      [class.error]="!myForm.get('sName')?.valid && myForm.get('sName')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+        <input type="name" formControlName="sName" class="form-control" id="lname" >
+        <div *ngIf="!myForm.controls['sName'].valid"
+                style="color: red;" class="form_error">
+                Last name is Invalid
+            </div>
+            <div *ngIf="myForm.controls['sName'].hasError('required')" class="invalid-feedback">
+              Last  name is required
+            </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('email')?.valid && myForm.get('email')?.touched">
+                    
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="email">
+        <div *ngIf="!myForm.controls['email'].valid" style="color: red;" class="form_error">
+            email is Invalid
+    </div>
+    <div *ngIf="myForm.controls['email'].hasError('required')" class="invalid-feedback">
+        email is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('phoneNo')?.valid && myForm.get('phoneNo')?.touched">
+        
+        <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+        <input type="phone no" class="form-control" id="phoneNo" formControlName="phoneNo">
+        <div *ngIf="!myForm.controls['phoneNo'].valid" style="color: red;" class="form_error">
+            Phone No is Invalid
+    </div>
+    <div *ngIf="myForm.controls['phoneNo'].hasError('required')" class="invalid-feedback">
+        Phone No is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('pwd')?.valid && myForm.get('pwd')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">Create password</label>
+        <input type="password" class="form-control" id="Create password" formControlName="pwd">
+        <div *ngIf="!myForm.controls['pwd'].valid" style="color: red;" class="form_error">
+            password is Invalid
+    </div>
+    <div *ngIf="myForm.controls['pwd'].hasError('required')" class="invalid-feedback">
+        password is required
+    </div>
+      </div>
+      
+      <div class="mb-3" [class.error]="!myForm.get('cpwd')?.valid && myForm.get('cpwd')?.touched  ">
+        <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="password again" formControlName="cpwd" required>
+        <div *ngIf="!myForm.controls['cpwd'].valid" style="color: red;" class="form_error">
+            Password is Invalid
+    </div>
+    <div *ngIf="myForm.controls['cpwd'].hasError('required')" class="invalid-feedback">
+        Password is required
+    </div>
+    <div *ngIf="myForm.hasError('mustMatch')" class="invalid-feedback">
+      Password is not matching
+  </div>
+    
+      </div>
+      
+      <div class="mb-3" [class.error]="!myForm.get('dob')?.valid && myForm.get('dob')?.touched">
+        
+        <label for="exampleFormControlInput1" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="date" formControlName="dob" required [max]="maxDate">
+        <div *ngIf="!myForm.controls['dob'].valid" style="color: red;" class="form_error">
+            Date of Birth is Invalid
+    </div>
+    <div *ngIf="myForm.controls['dob'].hasError('required')" class="invalid-feedback">
+        Date of Birth is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('hosNo')?.valid && myForm.get('hosNo')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">House no</label>
+        <input type="House no" class="form-control" id="House no" formControlName="hosNo">
+        <div *ngIf="!myForm.controls['hosNo'].valid" style="color: red;" class="form_error">
+            House no is Invalid
+    </div>
+    <div *ngIf="myForm.controls['hosNo'].hasError('required')" class="invalid-feedback">
+        House no is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('street')?.valid && myForm.get('street')?.touched">
+        
+        <label for="exampleFormControlInput1" class="form-label">street</label>
+        <input type="street" class="form-control" id="street" formControlName="street">
+        <div *ngIf="!myForm.controls['street'].valid" style="color: red;" class="form_error">
+            First name is Invalid
+    </div>
+    <div *ngIf="myForm.controls['street'].hasError('required')" class="invalid-feedback">
+            First name is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('area')?.valid && myForm.get('area')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">Area</label>
+        <input type="Area" class="form-control" id="Area" formControlName="area">
+        <div *ngIf="!myForm.controls['area'].valid" style="color: red;" class="form_error">
+            Area is Invalid
+    </div>
+    <div *ngIf="myForm.controls['area'].hasError('required')" class="invalid-feedback">
+        Area is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('city')?.valid && myForm.get('city')?.touched">
+        
+        <label for="exampleFormControlInput1" class="form-label">City</label>
+        <input type="City" class="form-control" id="City" formControlName="city">
+        <div *ngIf="!myForm.controls['city'].valid" style="color: red;" class="form_error">
+            City is Invalid
+    </div>
+    <div *ngIf="myForm.controls['city'].hasError('required')" class="invalid-feedback">
+        City is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('state')?.valid && myForm.get('state')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">State</label>
+        <input type="State" class="form-control" id="State" formControlName="state">
+        <div *ngIf="!myForm.controls['state'].valid" style="color: red;" class="form_error">
+            State is Invalid
+    </div>
+    <div *ngIf="myForm.controls['state'].hasError('required')" class="invalid-feedback">
+        State is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('country')?.valid && myForm.get('country')?.touched">
+        
+        <label for="exampleFormControlInput1" class="form-label">Country</label>
+        <input type="Country" class="form-control" id="Country" formControlName="country">
+        <div *ngIf="!myForm.controls['country'].valid" style="color: red;" class="form_error">
+            Country is Invalid
+    </div>
+    <div *ngIf="myForm.controls['country'].hasError('required')" class="invalid-feedback">
+        Country is required
+    </div>
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('pinCode')?.valid && myForm.get('pinCode')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
+        <input type="Pin Code" class="form-control" id="Pin Code" formControlName="pinCode">
+        <div *ngIf="!myForm.controls['pinCode'].valid" style="color: red;" class="form_error">
+            Pin Code is Invalid
+    </div>
+    <div *ngIf="myForm.controls['pinCode'].hasError('required')" class="invalid-feedback">
+        Pin Code is required
+    </div>
+    
+      </div>
+      <div class="mb-3" [class.error]="!myForm.get('role')?.valid && myForm.get('role')?.touched">
+        <label for="exampleFormControlInput1" class="form-label">Role</label>
+        <input type="role" class="form-control" id="role" formControlName="role">
+        <div *ngIf="!myForm.controls['role'].valid" style="color: red;" class="form_error">
+            role is Invalid
+    </div>
+    <div *ngIf="myForm.controls['role'].hasError('required')" class="invalid-feedback">
+        role is required
+    </div>
+    
+      </div>
+      <div *ngIf="!myForm.valid"
+               style="color: red;" class="form_error">
+               Form is Invalid
+
+               </div>
+
+      <button type="submit" class="btn btn-primary">Add User</button>
+</form>

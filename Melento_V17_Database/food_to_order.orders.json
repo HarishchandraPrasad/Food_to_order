@@ -1,0 +1,78 @@
+[{
+  "_id": 1,
+  "restaurant_id": "2",
+  "order_date": "23/12/2021",
+  "dishes_id": "1,2",
+  "num_of_dishes1": "2,1",
+  "user_id": "1",
+  "order_total": "450",
+  "payment_mode": null
+},
+{
+  "_id": 2,
+  "restaurant_id": 1,
+  "order_date": "24-08-2023",
+  "dishes_id": [
+    1,
+    2,
+    3
+  ],
+  "num_of_dishes1": [
+    2,
+    4,
+    1
+  ],
+  "user_id": 1,
+  "order_total": 240,
+  "payment_mode": "Credit Card"
+},
+{
+  "_id": 3,
+  "restaurant_id": "3",
+  "order_date": "12-08-2020",
+  "dishes_id": "1,2,3",
+  "num_of_dishes1": "2,4,2",
+  "user_id": "3",
+  "order_total": "1000",
+  "payment_mode": "Phone Pay"
+},
+{
+  "_id": 4,
+  "restaurant_id": "2",
+  "order_date": "24-12-2021",
+  "dishes_id": "1,2",
+  "num_of_dishes1": "5,3",
+  "user_id": "1",
+  "order_total": "240",
+  "payment_mode": "Paytm"
+},
+{
+  "_id": 5,
+  "restaurant_id": "1",
+  "order_date": "24-08-2023",
+  "dishes_id": "1,2,3",
+  "num_of_dishes1": "2,4,1",
+  "user_id": "1",
+  "order_total": "681",
+  "payment_mode": "Pay pal"
+},
+{
+  "_id": 6,
+  "restaurant_id": "1",
+  "order_date": "24-08-2023",
+  "dishes_id": "1,2,3",
+  "num_of_dishes1": "2,4,1",
+  "user_id": "1",
+  "order_total": "480",
+  "payment_mode": "Debit card"
+},
+{
+  "_id": 7,
+  "restaurant_id": "4",
+  "order_date": "01-12-2023",
+  "dishes_id": "1,2",
+  "num_of_dishes1": "2,4",
+  "user_id": "2",
+  "order_total": "350",
+  "payment_mode": "paytm"
+}]

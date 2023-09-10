@@ -1,0 +1,78 @@
+[{
+  "_id": 1,
+  "user_id": 1,
+  "dish_ids": [
+    1,
+    2
+  ],
+  "number_of_each_dish": [
+    4,
+    2
+  ],
+  "cart_restaurant_id": 1,
+  "total": 900
+},
+{
+  "_id": 2,
+  "user_id": 2,
+  "dish_ids": [
+    1,
+    2
+  ],
+  "number_of_each_dish": [
+    2,
+    1
+  ],
+  "cart_restaurant_id": 2,
+  "total": 450
+},
+{
+  "_id": 3,
+  "user_id": 3,
+  "dish_ids": [
+    1,
+    2
+  ],
+  "number_of_each_dish": [
+    2,
+    1
+  ],
+  "cart_restaurant_id": 2,
+  "total": 250
+},
+{
+  "_id": 4,
+  "user_id": 4,
+  "dish_ids": [
+    1,
+    2
+  ],
+  "number_of_each_dish": [
+    2,
+    1
+  ],
+  "cart_restaurant_id": 2,
+  "total": 450
+},
+{
+  "_id": 5,
+  "user_id": 5,
+  "dish_ids": [
+    1,
+    2
+  ],
+  "number_of_each_dish": [
+    2,
+    1
+  ],
+  "cart_restaurant_id": 2,
+  "total": 250
+},
+{
+  "_id": 6,
+  "user_id": 6,
+  "dish_ids": [],
+  "number_of_each_dish": [],
+  "cart_restaurant_id": 0,
+  "total": 0
+}]

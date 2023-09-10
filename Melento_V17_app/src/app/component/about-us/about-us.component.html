@@ -1,0 +1,113 @@
+<!-- <app-pipe-example></app-pipe-example> -->
+
+<!-- <div [style.background-color]="'Yellow'">
+    User fixed yellow background
+</div><br>
+
+<div [ngStyle]="{color:'white','background-color':'blue'}">
+    uses Fixed white text on blue background
+</div>
+
+<div [ngStyle]="{color:'red'}" [style.font-size.px]="fontSize">
+    red text
+</div>
+
+<h4>
+  ngStyle with an object
+</h4>
+
+<div [ngStyle]="style"></div>
+
+<h4>
+  ngStyle from variable
+</h4>
+<div [style.background-color]="color" style="color:white;">
+    {{color}} background
+</div>
+<h4>
+  Play with the color and the font size here
+</h4>
+
+<div>
+  <input type="text" name="color" value="{{color}}" #colorinput>
+  <input type="text" name="fontSize" value="{{fontSize}}" #fontinput>
+  <button type="button" (click)="apply(colorinput.value,fontinput.value)">Apply Settings</button>
+</div> -->
+
+<!-- <div class="ngClassDemo">
+  <div [ngClass]="{bordered:false}">This is never bordered</div>
+  <div [ngClass]="{bordered:true}">This is always bordered</div>
+
+  <div [ngClass]="{bordered:isBordered}">
+    using object literal. Border {{isBordered? "ON":"OFF"}}
+  </div>
+  <div [ngClass]="classesObj">
+    using object var Border {{classesObj.bordered? "ON":"OFF"}}
+  </div>
+  <button (click)="toggleBorder()">Toggle</button>
+
+
+  <div class="selectors">
+    <div>
+      <input type="checkbox" [checked]="classList.indexOf('blue')>-1" (click)="toggleClass('blue')">
+      <span>Blue</span>
+    </div>
+    <div>
+      <input type="checkbox" [checked]="classList.indexOf('round')>-1" (click)="toggleClass('round')">
+      <span>Round</span>
+    </div>
+  </div>
+  <div class="base" [ngClass]="['blue','round']">
+      This will always have a blue background and round corners
+  </div>
+  <div class="base" [ngClass]="classList">
+    This is {{classList.indexOf('blue')>-1?"":"NOT"}} blue
+    and {{classList.indexOf('round')>-1?"":"NOT"}}round
+</div>
+</div>
+<p [appHighlight]="color">Highlight me!</p>
+
+<p [appHighlight]="color" defaultColor="violet">
+  Highlight me too!
+</p>
+<img [appOpacity]="num" src="../assets/images/th.jpeg" height="75px" width="75px" > -->
+  
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Food delivery services
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong>  Food delivery services have long been a part of the food industry, with local restaurants and fast-food chains offering home delivery or takeout options. These services often rely on in-house or third-party delivery drivers who transport prepared meals directly from the restaurant to the customer. Dominos, Pizza Hut, and Papa John's are examples of established global brands that have been offering delivery services for decades.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Restaurant-controlled
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> In restaurant-controlled online food ordering, the restaurants create their own website and app, or choose to hire a delivery vendor. If they choose to create their own website, they make sure to obtain software that manages the orders efficiently, meaning it has the capability to manage different orders at once. When they hire a vendor, the restaurant pays for a monthly fee or percentage-based fees. The vendor covers the developmental costs.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Delivery platforms
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> The riders and drivers for nearly all independent restaurant delivery app services are independent contractors, having the flexibility to choose when they work. In India, specifically riders for the food app of Hyderabad, consider themselves employees because they sometimes work full time hours, are required to wear uniforms, and run shift system.
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,116 @@
+<div class="container-fluid">
+    <div class="row">
+        <br>
+        <h2>Contact</h2>
+        <div class="wpcf7 js" id="wpcf7-f1370-p400-o1" lang="en-US" dir="ltr">
+            <div class="screen-reader-response">
+                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                <ul></ul>
+            </div>
+            <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)" action="/contact/#wpcf7-f1370-p400-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                <div style="display: none;"> 
+                    <input type="hidden" name="_wpcf7" value="1370"> 
+                    <input type="hidden" name="_wpcf7_version" value="5.7.7"> 
+                    <input type="hidden" name="_wpcf7_locale" value="en_US"> 
+                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1370-p400-o1"> 
+                    <input type="hidden" name="_wpcf7_container_post" value="400"> 
+                    <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                </div>
+                <div class="row"><div class="col-md-6">
+                    <p>
+                        <label>First Name <span style="color:#cc0000;">*</span><br> 
+                        <span class="wpcf7-form-control-wrap" data-name="first-name">
+                            <input size="40" ngModel class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" value="" type="text" name="first-name" fdprocessedid="kzktze" required></span> 
+                            <div *ngIf="myForm.controls['first-name']?.['touched'] && myForm.controls['first-name']?.['errors']" class="invalid">
+                                <div *ngIf="myForm.controls['first-name']?.['errors']?.['required']">
+                                    First Name is required
+                                </div>
+                                
+                            </div>
+                        </label>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <label>Last Name <span style="color:#cc0000;">*</span><br> 
+                         <span class="wpcf7-form-control-wrap" data-name="last-name"><input size="40" ngModel class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" value="" type="text" name="last-name" fdprocessedid="c5qzq8" required></span> 
+                         <div *ngIf="myForm.controls['last-name']?.['touched'] && myForm.controls['last-name']?.['errors']" class="invalid">
+                            <div *ngIf="myForm.controls['last-name']?.['errors']?.['required']">
+                                Last Name is required
+                            </div>
+                            
+                        </div>
+                        </label>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <label>Email Address <span style="color:#cc0000;">*</span><br> <span class="wpcf7-form-control-wrap" data-name="your-email">
+                        <input size="40" ngModel class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" value="" type="email" name="email" fdprocessedid="ocm3hr" required email></span> 
+                        <div *ngIf="myForm.controls['email']?.['touched'] && myForm.controls['email']?.['errors']" class="invalid">
+                            <div *ngIf="myForm.controls['email']?.['errors']?.['required']">
+                                Email is required
+                            </div>
+                            <div *ngIf="myForm.controls['email']?.['errors']?.['email']">
+                                Email is invalid
+                            </div>
+                        </div>
+                        </label>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <label>Phone Number<br> <span class="wpcf7-form-control-wrap" data-name="your-phone">
+                            <input size="40" ngModel class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel form-control" aria-invalid="false" value="" type="tel" name="your-phone" fdprocessedid="81kmw" required maxlength="10" minlength="10"></span> 
+                            <div *ngIf="myForm.controls['your-phone']?.['touched'] && myForm.controls['your-phone']?.['errors']" class="invalid">
+                                <div *ngIf="myForm.controls['your-phone']?.['errors']?.['required']">
+                                    Phone Number is required
+                                </div>
+                                <div *ngIf="myForm.controls['your-phone']?.['errors']?.['maxlength']">
+                                    Phone Number is invalid
+                                </div>
+                                <div *ngIf="myForm.controls['your-phone']?.['errors']?.['minlength']">
+                                    Minimum 10 number need to enter
+                                </div>
+                            </div>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <p>         
+              <label>How may we help you? <span style="color:#cc0000;">*</span><br> 
+                        <span class="wpcf7-form-control-wrap" data-name="helphow">
+                            <textarea cols="40" rows="10" ngModel class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false" placeholder="Help me understand how I can help you?" name="helphow" required>
+
+                            </textarea>
+                            <div *ngIf="myForm.controls['helphow']?.['touched'] && myForm.controls['helphow']?.['errors']" class="invalid">
+                                <div *ngIf="myForm.controls['helphow']?.['errors']?.['required']">
+                                    Text is required
+                                </div>
+                                
+                            </div>
+                        </span>
+              </label>
+            </p>
+            <div *ngIf="!myForm.valid"
+               style="color: red;" class="form_error">
+               Form is Invalid
+
+               </div>
+            <div id="cf7sr-64bf670b55848" class="cf7sr-g-recaptcha" data-sitekey="6LfFDsgUAAAAAJpbfLyZA0a7vcF987V7_-nt_Zvn"></div>
+            <span class="wpcf7-form-control-wrap cf7sr-recaptcha" data-name="cf7sr-recaptcha">
+                <input type="hidden" name="cf7sr-recaptcha" value="" class="wpcf7-form-control form-control">
+            </span><br> 
+            <input class="wpcf7-form-control has-spinner wpcf7-submit btn btn-primary" type="submit" value="Send" fdprocessedid="xmhmfp"  >
+            <span class="wpcf7-spinner"></span><p></p><div class="wpcf7-response-output" aria-hidden="true">
+
+            </div>
+        </form>
+        </div>
+        <p><em> SignDesk</em> is a trusted and award-winning provider of global SaaS-based digital documentation solutions, helping businesses solve large-scale documentation & productivity challenges using cutting-edge AI & ML technology.
+        </p>
+        <p><strong>Email</strong>: contact@signdesk.com</p>
+        <h3>Address</h3>
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.556530986121!2d77.566593074789!3d13.000191787317862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17063d088663%3A0xdff39d6f78824598!2sSignDesk!5e0!3m2!1sen!2sin!4v1689663899672!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>""
+    </div> 
+  </div>

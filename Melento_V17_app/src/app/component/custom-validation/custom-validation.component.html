@@ -1,0 +1,38 @@
+<div class="ui raised segment">
+    <h2 class="ui header">Demo Form: Sku with Builder</h2>
+    <form [formGroup]="myForm"
+          (ngSubmit)="onSubmit(myForm.value)"
+          class="ui form"
+          [class.error]="!myForm.valid && myForm.touched">
+  
+      <div class="field"
+      [class.error]="!myForm.get('sku')?.valid && myForm.get('sku')?.touched">
+        <label for="skuInput">SKU</label>
+  <input type="text"
+               id="skuInput"
+               placeholder="SKU"
+               formControlName="sku"> 
+               <div *ngIf="!myForm.controls['sku'].valid"
+               style="color: red;" class="form_error">
+                SKU is Invalid
+               </div>
+               <div *ngIf="myForm.controls['sku'].hasError('required')"
+               class="invalid-feedback">
+                   SKU is required
+               </div>
+               <div *ngIf="sku.hasError('invalidSku')" style="color: red;" class="form_error">
+                SKU must begin with <span>123</span>
+               </div>
+                 
+
+               <div *ngIf="!myForm.valid"
+               style="color: red;" class="form_error">
+               Form is Invalid
+
+               </div>
+      </div>
+  
+    <button type="submit" class="ui button">Submit</button>
+    </form>
+  </div>
+

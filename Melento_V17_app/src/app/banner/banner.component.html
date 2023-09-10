@@ -1,0 +1,198 @@
+<header class="p-3 text-bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <img src="../assets/images/th.jpeg" height="75px" width="75px"/>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          
+          <li><a  class="nav-link px-2 text-white" [routerLink]="'/home'"  >Home</a></li>
+          <li><a  class="nav-link px-2 text-white" [routerLink]="'/aboutUs'">About Us</a></li>
+          <li><a  class="nav-link px-2 text-white" [routerLink]="'/restaurants'">Restaurants</a></li>
+          <li><a  class="nav-link px-2 text-white" [routerLink]="'/admin'">Admin</a></li>
+          <li><a  class="nav-link px-2 text-white" [routerLink]="'/contactUs'">Contact Us</a></li>
+          <!-- <li><a  class="nav-link px-2 text-white" [routerLink]="'/course'">Courses</a></li> -->
+          <li *ngIf="role=='restaurant owner'"><a  class="nav-link px-2 text-white" [routerLink]="'/owner'">Restaurant Owner</a></li>
+          
+          
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngIf="!user_id">Login</button>
+          <!-- <app-sign></app-sign> -->
+          <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" *ngIf="!user_id">
+            Register
+          </button>
+          <button type="button" class="btn btn-outline-light me-2"    data-bs-toggle="modal" data-bs-target="#exampleCart">Cart</button>
+          <button type="button" class="btn btn-outline-light me-lg-3  " data-bs-toggle="modal" data-bs-target="#examplelogout" (click)="clear()" *ngIf="user_id" >Log Out</button>
+          <!-- <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModalJWT" >JWT Login</button> -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="padding: 20px;">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign up</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <app-sign></app-sign>
+            <!-- <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="123456789" required>
+            </div> -->
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="check()">Sign in</button>
+              
+            </div> -->
+          </div>
+        </div>
+      
+              
+          </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Registration Form</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <app-register-form></app-register-form>
+                <!-- <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="First Name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Last Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="Last Name">
+                  </div> -->
+                  <!-- <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                    <input type="phone no" class="form-control" id="exampleFormControlInput1" placeholder="123456789">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Create password</label>
+                    <input type="password" class="form-control" id="Create password" placeholder="Enter password">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="password again" placeholder="Enter password again">
+                  </div>
+                  
+                  <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="date" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">House no</label>
+                    <input type="House no" class="form-control" id="House no" placeholder="Enter house no">
+                  </div>
+                  <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">street</label>
+                    <input type="street" class="form-control" id="street" placeholder="Enter street name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Area</label>
+                    <input type="Area" class="form-control" id="Area" placeholder="Enter Area">
+                  </div>
+                  <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">City</label>
+                    <input type="City" class="form-control" id="City" placeholder="enter City">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">State</label>
+                    <input type="State" class="form-control" id="State" placeholder="Enter State">
+                  </div>
+                  <div class="mb-3">
+                    
+                    <label for="exampleFormControlInput1" class="form-label">Country</label>
+                    <input type="Country" class="form-control" id="Country" placeholder="Enter Country">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Pin Code</label>
+                    <input type="Pin Code" class="form-control" id="Pin Code" placeholder="Enter Pin Code">
+                  </div> -->
+                  
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="check()">Register</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="padding: 20px;">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Cart</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <header>cart Items</header> 
+                <app-cart></app-cart>
+              </div>
+              
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="check()">Buy</button>
+              
+            </div>
+          </div>
+        </div>
+      
+              
+          </div>
+
+
+          <div class="modal fade" id="exampleModalJWT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" style="padding: 20px;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">JWS login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Username</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput2" #username placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password1" #password placeholder="123456789" required>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click) = "registerUser_Jwt(username.value,password.value)">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click) = "loginUser_Jwt(username.value,password.value)">log in</button>
+                  
+                </div>
+              </div>
+            </div>
+          
+                  
+              </div>
+  </header>

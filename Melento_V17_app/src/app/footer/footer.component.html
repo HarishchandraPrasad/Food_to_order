@@ -1,0 +1,12 @@
+
+<footer class="py-3 my-4 text-bg-dark">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a  class="nav-link px-2 text-white" [routerLink]="'/home'">Home</a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-white" [routerLink]="'/aboutUs'">About Us</a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-white" [routerLink]="'/restaurants'">Restaurants</a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-white" [routerLink]="'/admin'">Admin</a></li>
+      <li class="nav-item"><a  class="nav-link px-2 text-white" [routerLink]="'/contactUs'">Contact Us</a></li>
+      <li *ngIf="role=='restaurant owner'"><a  class="nav-link px-2 text-white" [routerLink]="'/owner'">Restaurant Owner</a></li>
+    </ul>
+    <p class="text-center nav-link px-2 text-white">© 2023 Company, Inc</p>
+  </footer>

@@ -1,0 +1,52 @@
+<!-- <div class="row">
+    <label>Cart Id :{{cart.id}}</label>
+    <label>Cart User Id :{{cart.user_id}}</label>
+    <label>Dish Id :{{cart.dish_ids}}</label>
+    <label>number of items for each dish :{{cart.number_of_each_dish}}</label>
+    <label>Total Amount :{{cart.total}}</label>
+    
+</div> -->
+
+<!-- <table>
+    <thead>
+        <th>Cart User Id</th><th>Dish Ids</th><th>number of items for each dish</th><th>Restaurant Id</th><th></th><th>Total Amount</th>
+    </thead>
+    <tr>
+        <td>{{cart.user_id}}</td>
+        <td>{{cart.dish_ids}}</td>
+        <td>{{cart.number_of_each_dish}}</td>
+        <td>{{cart.cart_restaurant_id}}</td>
+        <button class="button-minus border rounded-circle" (click)="decrement(dish.id)">-</button>
+        {{cart.number_of_each_dish}}
+        
+       <button class="button-plus border rounded-circle" (click)="increment(dish.id)">+</button>
+       <td>{{cart.total}}</td>
+    </tr>
+</table> -->
+
+<div class="row">
+    <div class="body">
+      <div class="Cart-Container" >
+        <table class="table table-striped-columns">
+          <thead>
+            <th>dish id</th><th>dish name</th><th>price</th>
+          </thead>
+          <tr *ngFor="let dish of arrdishes;let i=index">
+          <td *ngIf="dish.available == 'yes'">  {{dish.id}}</td><td *ngIf="dish.available == 'yes'"> {{dish.d_Name}}</td>
+          <button class="button-minus border rounded-circle" (click)="decrement(dish.id)" *ngIf="dish.available == 'yes'">-</button>
+           {{cart.number_of_each_dish[i]}}
+           
+          <button class="button-plus border rounded-circle" (click)="increment(dish.id)" *ngIf="dish.available == 'yes'">+</button>
+          <!-- <button type="button" class="btn btn-success btn-number"  (click)= "incrementwine(wine)" data-type="plus" data-field="quant[3]">
+            <span class="glyphicon glyphicon-plus"></span>
+         </button> -->
+          <td *ngIf="dish.available == 'yes'"> Rs  {{dish.d_Price*cart.number_of_each_dish[i]}}</td>
+          </tr>
+        </table>
+        <div>TOTAL: {{total_amt}}</div>
+     </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="checkout()" >Check out</button>
+  <button class="btn btn-primary ml-2" (click)="clearcart()">clear cart</button>
+  

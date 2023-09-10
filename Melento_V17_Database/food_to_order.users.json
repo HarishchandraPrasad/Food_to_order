@@ -1,0 +1,114 @@
+[{
+  "_id": 1,
+  "first_name": "Padda",
+  "last_name": "Harishchandra Prasad",
+  "dob": "2023-08-01",
+  "email": "paddaharishchandraprasad@gmail.com",
+  "password": "1f99735ee2e674e13c926f17a9033be7",
+  "mobile": "08688196572",
+  "address": {
+    "id": 1,
+    "house_No": "23",
+    "street": "8th Main",
+    "area": "vgr",
+    "city": "Pedda laxmipuram",
+    "country": "India",
+    "pincode": "532216"
+  },
+  "role": "user"
+},
+{
+  "_id": 2,
+  "first_name": "Ramesh",
+  "last_name": "Padda",
+  "dob": "2023-07-06",
+  "email": "ramesh@gmail.com",
+  "password": "1f99735ee2e674e13c926f17a9033be7",
+  "mobile": "9490655763",
+  "address": {
+    "id": 1,
+    "house_No": "626",
+    "street": "9th main",
+    "area": "mall",
+    "city": "hyd",
+    "country": "India",
+    "pincode": "6584112"
+  },
+  "role": "admin"
+},
+{
+  "_id": 3,
+  "first_name": "srinu",
+  "last_name": "naveen",
+  "dob": "2023-07-06",
+  "email": "srinu@gmail.com",
+  "password": "82bdd24b8956e651de9d95cbbe812319",
+  "mobile": "123654789",
+  "address": {
+    "id": 0,
+    "house_No": "4",
+    "street": "edwa",
+    "area": "Mvm",
+    "city": "pkm",
+    "country": "india",
+    "pincode": "584126"
+  },
+  "role": "user"
+},
+{
+  "_id": 4,
+  "first_name": "Abhi",
+  "last_name": "K",
+  "dob": "2023-08-01",
+  "email": "abhi@gmail.com",
+  "password": "1f99735ee2e674e13c926f17a9033be7",
+  "mobile": "123456789",
+  "address": {
+    "id": 0,
+    "house_No": "23",
+    "street": "dcsdc",
+    "area": "Mvp",
+    "city": "PEDDA LAXMIPURAM",
+    "country": "India",
+    "pincode": "532216"
+  },
+  "role": "restaurant owner"
+},
+{
+  "_id": 5,
+  "first_name": "Akash",
+  "last_name": "B",
+  "dob": "2023-08-05",
+  "email": "akash@gmail.com",
+  "password": "987660caeaba7dac531c9eb92f44d50f",
+  "mobile": "1254789632",
+  "address": {
+    "id": 0,
+    "house_No": "23",
+    "street": "edwa",
+    "area": "mall",
+    "city": "war",
+    "country": "India",
+    "pincode": "530002"
+  },
+  "role": "restaurant owner"
+},
+{
+  "_id": 6,
+  "first_name": "chanti",
+  "last_name": "Harishchandra Prasad",
+  "dob": "2023-09-01",
+  "email": "chanti@gmail.com",
+  "password": "1f99735ee2e674e13c926f17a9033be7",
+  "mobile": "08688196572",
+  "address": {
+    "id": 0,
+    "house_No": "626",
+    "street": "abc",
+    "area": "vgr",
+    "city": "Pedda laxmipuram",
+    "country": "India",
+    "pincode": "532216"
+  },
+  "role": "user"
+}]

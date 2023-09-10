@@ -1,0 +1,237 @@
+[{
+  "_id": 1,
+  "r_owner_id": 4,
+  "r_Name": "Suresh Food Center",
+  "r_Img_Path": "assets/images/Ganesh.jpeg",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "16",
+      "area": "Mvp",
+      "city": "Hyd",
+      "country": "India",
+      "pincode": "532216"
+    },
+    {
+      "id": 2,
+      "house_No": "26",
+      "area": "Mvp",
+      "city": "Hyd",
+      "country": "India",
+      "pincode": "532215"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 1,
+      "res_Id": 1,
+      "d_Name": "Dosa",
+      "d_Description": "spicy",
+      "d_Price": "150",
+      "d_Veg": true,
+      "available": "yes"
+    },
+    {
+      "id": 2,
+      "res_Id": 1,
+      "d_Name": "Biryani",
+      "d_Description": "spicy",
+      "d_Price": "150",
+      "d_Veg": false,
+      "available": "no"
+    }
+  ]
+},
+{
+  "_id": 2,
+  "r_owner_id": 4,
+  "r_Name": "Dosa Center",
+  "r_Img_Path": "./assets/images/dosa.jpeg",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "23",
+      "area": "Mvp",
+      "city": "Hyd",
+      "country": "India",
+      "pincode": "532216"
+    },
+    {
+      "id": 2,
+      "house_No": "65",
+      "area": "Mvp",
+      "city": "Hyd",
+      "country": "India",
+      "pincode": "532215"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 1,
+      "res_Id": 2,
+      "d_Name": "Dosa",
+      "d_Description": "dsc",
+      "d_Price": "150",
+      "d_Veg": true,
+      "available": "yes"
+    },
+    {
+      "id": 2,
+      "res_Id": 2,
+      "d_Name": "Biryani",
+      "d_Description": "dsc",
+      "d_Price": "150",
+      "d_Veg": false,
+      "available": "yes"
+    }
+  ]
+},
+{
+  "_id": 3,
+  "r_owner_id": 5,
+  "r_Name": "Biryani center",
+  "r_Img_Path": "./assets/images/biryani.jpg",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "236",
+      "street": "mpv",
+      "area": "pkm",
+      "city": "malli",
+      "country": "India",
+      "pincode": "530002"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 1,
+      "res_Id": "3",
+      "d_Name": "biryani",
+      "d_Description": "non veg meal",
+      "d_Price": "150",
+      "d_Veg": "false",
+      "available": "yes"
+    }
+  ]
+},
+{
+  "_id": 4,
+  "r_owner_id": 5,
+  "r_Name": "Noodles Point",
+  "r_Img_Path": "../assets/images/noodles.webp",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "1-117",
+      "street": "3th cross",
+      "area": "kphb",
+      "city": "Hyderabad",
+      "country": "India",
+      "pincode": "852369"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 1,
+      "res_Id": "4",
+      "d_Name": "Noodles",
+      "d_Description": "abc",
+      "d_Price": "80",
+      "d_Veg": "true",
+      "available": "yes"
+    },
+    {
+      "id": 2,
+      "res_Id": "4",
+      "d_Name": "Chicken Noodles",
+      "d_Description": "dcs",
+      "d_Price": "120",
+      "d_Veg": "false",
+      "available": "yes"
+    }
+  ]
+},
+{
+  "_id": 5,
+  "r_owner_id": 5,
+  "r_Name": "Fried Rice Center",
+  "r_Img_Path": "../assets/images/Friedrice.jpg",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "25",
+      "street": "Gandi Nagar",
+      "area": "kphb",
+      "city": "Hyderabad",
+      "country": "India",
+      "pincode": "258963"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 1,
+      "res_Id": "5",
+      "d_Name": "Friedrice",
+      "d_Description": "abc",
+      "d_Price": "100",
+      "d_Veg": "true",
+      "available": "yes"
+    }
+  ]
+},
+{
+  "_id": 6,
+  "r_owner_id": "5",
+  "r_Name": "Pizza Hut",
+  "r_Img_Path": "../assets/images/pizza.jpeg",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "36",
+      "street": "Santosh Nagar",
+      "area": "Kphb",
+      "city": "Hyderabad",
+      "country": "India",
+      "pincode": "521463"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 1,
+      "res_Id": "6",
+      "d_Name": "Pizza",
+      "d_Description": "dcec",
+      "d_Price": "120",
+      "d_Veg": "False",
+      "available": "yes"
+    }
+  ]
+},
+{
+  "_id": 7,
+  "r_owner_id": 4,
+  "r_Name": "Domino's",
+  "r_Img_Path": "../assets/images/pizza.jpeg",
+  "r_Addresses": [
+    {
+      "id": 1,
+      "house_No": "36",
+      "street": "Santosh Nagar",
+      "area": "Kphb",
+      "city": "Hyderabad",
+      "country": "India",
+      "pincode": "521463"
+    }
+  ],
+  "r_dishes": [
+    {
+      "id": 2,
+      "res_Id": 1,
+      "d_Name": "Biryani",
+      "d_Description": "spicy",
+      "d_Price": "150",
+      "d_Veg": false,
+      "available": "yes"
+    }
+  ]
+}]

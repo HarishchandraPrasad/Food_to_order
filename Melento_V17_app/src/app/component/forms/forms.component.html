@@ -1,0 +1,22 @@
+<div class="ui raised segment">
+    <h2 class="ui header">Demo form</h2>
+
+    <div class="ui info message">
+        {{productName}}
+    </div>
+
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form">
+        <div class="field">
+            <label for="productNameInput">Product Name</label>
+            <input type="text"
+                    id="productNameInput"
+                    placeholder="Product Name"
+                    name="productName"
+                    [(ngModel)]="productName">
+        
+
+        </div>
+        <button type="submit" class="ui button">submit</button>
+    </form>
+
+</div>

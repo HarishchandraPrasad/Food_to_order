@@ -1,0 +1,418 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "r_owner_id": 4,
+      "r_Name": "Suresh Food Center",
+      "r_Img_Path": "assets/images/Ganesh.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "16",
+          "area": "Mvp",
+          "city": "Hyd",
+          "country": "India",
+          "pincode": "532216"
+        },
+        {
+          "id": 2,
+          "house_No": "26",
+          "area": "Mvp",
+          "city": "Hyd",
+          "country": "India",
+          "pincode": "532215"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 1,
+          "res_Id": 1,
+          "d_Name": "Dosa",
+          "d_Description": "spicy",
+          "d_Price": "150",
+          "d_Veg": true,
+          "available": "yes"
+        },
+        {
+          "id": 2,
+          "res_Id": 1,
+          "d_Name": "Biryani",
+          "d_Description": "spicy",
+          "d_Price": "150",
+          "d_Veg": false,
+          "available": "no"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "r_owner_id": 4,
+      "r_Name": "Dosa Center",
+      "r_Img_Path": "./assets/images/dosa.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "23",
+          "area": "Mvp",
+          "city": "Hyd",
+          "country": "India",
+          "pincode": "532216"
+        },
+        {
+          "id": 2,
+          "house_No": "65",
+          "area": "Mvp",
+          "city": "Hyd",
+          "country": "India",
+          "pincode": "532215"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 1,
+          "res_Id": 2,
+          "d_Name": "Dosa",
+          "d_Description": "dsc",
+          "d_Price": "150",
+          "d_Veg": true,
+          "available": "yes"
+        },
+        {
+          "id": 2,
+          "res_Id": 2,
+          "d_Name": "Biryani",
+          "d_Description": "dsc",
+          "d_Price": "150",
+          "d_Veg": false,
+          "available": "yes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "r_owner_id": 5,
+      "r_Name": "Biryani center",
+      "r_Img_Path": "./assets/images/biryani.jpg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "236",
+          "street": "mpv",
+          "area": "pkm",
+          "city": "malli",
+          "country": "India",
+          "pincode": "530002"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 1,
+          "res_Id": "3",
+          "d_Name": "biryani",
+          "d_Description": "non veg meal",
+          "d_Price": "150",
+          "d_Veg": "false",
+          "available": "yes"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "r_owner_id": 5,
+      "r_Name": "Noodles Point",
+      "r_Img_Path": "../assets/images/noodles.webp",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "1-117",
+          "street": "3th cross",
+          "area": "kphb",
+          "city": "Hyderabad",
+          "country": "India",
+          "pincode": "852369"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 1,
+          "res_Id": "4",
+          "d_Name": "Noodles",
+          "d_Description": "abc",
+          "d_Price": "80",
+          "d_Veg": "true",
+          "available": "yes"
+        },
+        {
+          "id": 2,
+          "res_Id": "4",
+          "d_Name": "Chicken Noodles",
+          "d_Description": "dcs",
+          "d_Price": "120",
+          "d_Veg": "false",
+          "available": "yes"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "r_owner_id": 5,
+      "r_Name": "Fried Rice Center",
+      "r_Img_Path": "../assets/images/Friedrice.jpg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "25",
+          "street": "Gandi Nagar",
+          "area": "kphb",
+          "city": "Hyderabad",
+          "country": "India",
+          "pincode": "258963"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 1,
+          "res_Id": "5",
+          "d_Name": "Friedrice",
+          "d_Description": "abc",
+          "d_Price": "100",
+          "d_Veg": "true",
+          "available": "yes"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "r_owner_id": 5,
+      "r_Name": "Pizza Hut",
+      "r_Img_Path": "../assets/images/pizza.jpeg",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "36",
+          "street": "Santosh Nagar",
+          "area": "Kphb",
+          "city": "Hyderabad",
+          "country": "India",
+          "pincode": "521463"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 0,
+          "res_Id": "",
+          "d_Name": "",
+          "d_Description": "",
+          "d_Price": "",
+          "d_Veg": "",
+          "available": "yes"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "r_owner_id": "4",
+      "r_Name": "Abhi Restaurant",
+      "r_Img_Path": "abc",
+      "r_Addresses": [
+        {
+          "id": 1,
+          "house_No": "256",
+          "street": "pedda street",
+          "area": "srk",
+          "city": "sril",
+          "country": "india",
+          "pincode": "52641"
+        }
+      ],
+      "r_dishes": [
+        {
+          "id": 1,
+          "res_Id": "7",
+          "d_Name": "fish fry",
+          "d_Description": "xsdverbg",
+          "d_Price": "120",
+          "d_Veg": "false",
+          "available": ""
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Padda",
+      "last_name": "Harishchandra Prasad",
+      "dob": "2023-08-01",
+      "email": "paddaharishchandraprasad@gmail.com",
+      "password": "123456",
+      "mobile": "08688196572",
+      "address": {
+        "id": 0,
+        "house_No": "23",
+        "street": "8th Main",
+        "area": "vgr",
+        "city": "Pedda laxmipuram",
+        "country": "India",
+        "pincode": "532216"
+      },
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "first_name": "Ramesh",
+      "last_name": "Padda",
+      "dob": "2023-07-06",
+      "email": "ramesh@gmail.com",
+      "password": "123456",
+      "mobile": "9490655763",
+      "address": {
+        "id": 0,
+        "house_No": "626",
+        "street": "9th main",
+        "area": "mall",
+        "city": "hyd",
+        "country": "India",
+        "pincode": "6584112"
+      },
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "first_name": "srinu",
+      "last_name": "naveen",
+      "dob": "2023-07-06",
+      "email": "srinu@gmail.com",
+      "password": "258963",
+      "mobile": "123654789",
+      "address": {
+        "id": 0,
+        "house_No": "4",
+        "street": "edwa",
+        "area": "Mvm",
+        "city": "pkm",
+        "country": "india",
+        "pincode": "584126"
+      },
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "first_name": "Abhi",
+      "last_name": "K",
+      "dob": "2023-08-01",
+      "email": "abhi@gmail.com",
+      "password": "123456",
+      "mobile": "123456789",
+      "address": {
+        "id": 0,
+        "house_No": "23",
+        "street": "dcsdc",
+        "area": "Mvp",
+        "city": "PEDDA LAXMIPURAM",
+        "country": "India",
+        "pincode": "532216"
+      },
+      "role": "restaurant owner"
+    },
+    {
+      "id": 5,
+      "first_name": "Akash",
+      "last_name": "B",
+      "dob": "2023-08-05",
+      "email": "akash@gmail.com",
+      "password": "123456789",
+      "mobile": "1254789632",
+      "address": {
+        "id": 0,
+        "house_No": "23",
+        "street": "edwa",
+        "area": "mall",
+        "city": "war",
+        "country": "India",
+        "pincode": "530002"
+      },
+      "role": "restaurant owner"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "restaurant_id": "1",
+      "order_date": "24-08-2022",
+      "dishes_id": "2,3",
+      "num_of_dishes1": "2,3",
+      "user_id": "2",
+      "order_total": "500",
+      "payment_mode": "Google Pay"
+    },
+    {
+      "id": 2,
+      "restaurant_id": 1,
+      "order_date": "24-08-2023",
+      "dishes_id": [
+        1,
+        2,
+        3
+      ],
+      "num_of_dishes1": [
+        2,
+        4,
+        1
+      ],
+      "user_id": 1,
+      "order_total": 240,
+      "payment_mode": "Credit Card"
+    },
+    {
+      "id": 3,
+      "restaurant_id": "3",
+      "order_date": "12-08-2020",
+      "dishes_id": "1,2,3",
+      "num_of_dishes1": "2,4,2",
+      "user_id": "3",
+      "order_total": "1000",
+      "payment_mode": "Phone Pay"
+    },
+    {
+      "id": 4,
+      "restaurant_id": "2",
+      "order_date": "24-12-2021",
+      "dishes_id": "1,2",
+      "num_of_dishes1": "5,3",
+      "user_id": "1",
+      "order_total": "240",
+      "payment_mode": "Paytm"
+    },
+    {
+      "id": 5,
+      "restaurant_id": "1",
+      "order_date": "24-08-2023",
+      "dishes_id": "1,2,3",
+      "num_of_dishes1": "2,4,1",
+      "user_id": "1",
+      "order_total": "681",
+      "payment_mode": "Pay pal"
+    },
+    {
+      "id": 6,
+      "restaurant_id": "1",
+      "order_date": "24-08-2023",
+      "dishes_id": "1,2,3",
+      "num_of_dishes1": "2,4,1",
+      "user_id": "1",
+      "order_total": "480",
+      "payment_mode": "Debit card"
+    },
+    {
+      "id": 7,
+      "restaurant_id": "5",
+      "order_date": "01-12-2023",
+      "dishes_id": "1,2",
+      "num_of_dishes1": "2,4",
+      "user_id": "2",
+      "order_total": "450",
+      "payment_mode": "paytm"
+    }
+  ]
+}
